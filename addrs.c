@@ -2,7 +2,6 @@
  * Print the start of the stack and the address of a function in a dynamically
  * loaded library (libc).
  */
-
 #include<stdlib.h>
 #include<stdio.h>
 #include<dlfcn.h>
