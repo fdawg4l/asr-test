@@ -1,1 +1,1 @@
-# Print the start of the stack and a function address in a dynamically loaded library
+# Print the start of the stack and the address of printf
