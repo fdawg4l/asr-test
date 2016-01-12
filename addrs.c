@@ -12,11 +12,14 @@
 int
 main(int argc, char **argv) {
     void *h = dlopen(LIB, RTLD_NOW);
+    void *ptr = malloc(sizeof(long int));
 
     printf("stack:\t0x%lx\n"
-            FNC":\t0x%lx\n",
+            FNC":\t0x%lx\n"
+            "heap\t0x%lx\n",
             (unsigned long int)&argc,
-            (unsigned long int)dlsym(h, FNC));
+            (unsigned long int)dlsym(h, FNC),
+            (unsigned long int)ptr);
 
     return 0;
 }
